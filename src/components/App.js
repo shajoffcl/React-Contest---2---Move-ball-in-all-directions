@@ -35,13 +35,6 @@ const App = () => {
   const buttonClickHandler = () => {
     setRenderBall(true);
   };
-  useEffect(() => {
-    document.addEventListener("keydown", handleKeyDown);
-
-    return () => {
-      document.removeEventListener("keydown", handleKeyDown);
-    };
-  }, []);
 
   useEffect(() => {
     document.addEventListener("keydown", handleKeyDown);
